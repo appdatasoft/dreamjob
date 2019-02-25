@@ -2,8 +2,10 @@
 <div class="head_1">
     <header>
     <div>
-    <v-hiringmenu/>
+    <!--<v-hiringmenu/>-->
+   <!--<HiringMenu></HiringMenu>-->
     </div>
+    
       <div class="container h-100">
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
@@ -17,7 +19,7 @@
               </div>
               <br>
              <!--<a href="/growthHack" class="btn btn-xl main-bt js-scroll-trigger">LEARN MORE</a>-->
-             <a href="https://goo.gl/forms/wktdAeVXlYA3RICt2" class="ui massive blue inverted black button">LEARN MORE</a>
+             <a href="https://goo.gl/forms/wktdAeVXlYA3RICt2" class="ui massive blue inverted black button">CREATE YOUR DREAM JOB</a>
               </div>
           </div>
           <div class="col-lg-5 my-auto">
@@ -30,7 +32,7 @@
         </div>
       </div>
     </header>
-    <b-container>
+    <!--<b-container>-->
     <section class="features" id="features">
       <div class="container">
         <div class="section-heading text-center">
@@ -109,7 +111,7 @@
         </ul>
       </div>
     </section>
- </b-container>
+ <!--</b-container>-->
 </div>
 </template>
 <link src='../css/detectify.css'/>
@@ -156,6 +158,6 @@ section.img {
 
 <script>
 export default {
-     name: 'HelloWorld'
+     name: 'Home'
 }
 </script>

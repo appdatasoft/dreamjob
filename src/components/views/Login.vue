@@ -1,20 +1,45 @@
 <template>
 <div class="login">
 <h3> Sign In</h3>
-<input type="text" placeholder="Email"><br>
-<input type="password" placeholder="Password"><br>
-<button>Connection</button>
-<p>You don't have an account ? You can create one</p>
+<form @submit.prevent="onSubmit" >
+<input type="text" v-model="email" placeholder="Email"><br>
+<input type="password" v-model="password" placeholder="Password"><br>
+<!-- <button @click="login">Connection</button>-->
+<input type="submit" value="Login"/>
+<p>You don't have an account ? You can <router-link to="/sign-up">create one</router-link></p>
+ </form>
 </div>
 </template>
 
 <script>
+import firebase from 'firebase'
+import {mapGetters} from 'vuex'
 export default {
-    name: 'Login',
+    name: 'login',
+    computed: {
+    ...mapGetters(['user']),
+    nextRoute () {
+      return this.$route.query.redirect || '/timeline'
+    }
+  },
     data() {
-        return{};
+        return {
+            email: '',
+            password: ''
+        }
     },
-    methods:{}
+    watch: {
+    user (auth) {
+      if(!!auth){
+        this.$router.replace(this.nextRoute)
+      }
+    }
+  },
+    methods: {
+        async onSubmit () {
+      const auth = await this.$auth.login(this.email, this.password)
+    }
+    }
 }
 </script>
 
