@@ -3,7 +3,7 @@
   
     <div id="nav" class="gap">
       <navigation></navigation>
-        <router-view/> 
+        <router-view/> <!--
         <div class="page-header">
       <h1>Create Your Dream Job <br><small>growth hacking your career</small></h1>
     </div>
@@ -53,7 +53,7 @@
           </tbody>
         </table>
       </div>
-    </div>
+    </div>-->
     </div>
     
   </div>
@@ -66,8 +66,11 @@ import Navigation from '@/components/Navigation'
 import { firebase } from './FirebaseAuthPlugin'
 import toastr from 'toastr'
 import FirebaseAuthPlugin from './FirebaseAuthPlugin'
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
 
 Vue.use(FirebaseAuthPlugin)
+Vue.use(VueMaterial)
 let db1 = firebase.database()
 let booksRef = db1.ref('books')
 export default {
@@ -107,6 +110,7 @@ export default {
 <style lang="css">
 /*<link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
 */@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons">
 
 
 
@@ -178,6 +182,31 @@ export default {
   font-size: 32px;
 line-height: 40px;
   font-weight: 600;
+  color: #000000
+}
+#textsize4{
+  font-size: 50px;
+line-height: 40px;
+  font-weight: 700;
+  color: #000000
+}
+#textsize5{
+  font-size: 60px;
+line-height: 80px;
+  font-weight:900;
+  color: #000000
+}
+
+#textsize6{
+  font-size: 22px;
+line-height: 20px;
+  font-weight:400;
+  color: #808080
+}
+#textsize7{
+  font-size: 20px;
+line-height: 30px;
+  font-weight:600;
   color: #000000
 }
 .device-container{

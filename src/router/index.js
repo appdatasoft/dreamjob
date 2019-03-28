@@ -3,9 +3,11 @@ import Vue from 'vue'
 import VueFire from 'vuefire'
 import Router from 'vue-router'
 import Home from '@/components/Home'
+import Manager from '@/components/Manager'
 import Login from '@/components/views/Login'
 import SignUp from '@/components/views/SignUp'
 import Timeline from '@/components/views/Timeline'
+import Google from '@/components/views/Google'
 import SignOut from '@/components/views/SignOut'
 import store from '../store'
 import NProgress from 'nprogress';
@@ -34,6 +36,11 @@ const router = new Router({
       meta: {
         authRequired: true
       }
+    },
+    {
+      path: '/google',
+      name: 'google',
+      component: Google
     },
     {
       path: '/login',

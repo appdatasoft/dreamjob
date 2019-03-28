@@ -13,9 +13,9 @@
             <br>
             <br>
             <br>
-             <h1 class="mb-4" id= "textsize5">Learn, teach, get your dream job.</h1>
+             <h1 class="mb-4" id= "textsize5">Build successful teams.</h1>
              </br>
-              <h2>Growth hacking your career.</h2>
+              <h2>Skills + Culture.</h2>
               </br>
               </br>
               </br>
@@ -24,7 +24,7 @@
               </div>
               <br>
              <!--<a href="/login" class="ui massive blue inverted black button">CREATE YOUR DREAM JOB</a>-->
-              <router-link v-show="!user" :to="{name: 'login'}"  class="ui massive blue inverted green button">CREATE YOUR DREAM JOB</router-link>
+              <router-link v-show="!user" :to="{name: 'login'}"  class="ui massive blue inverted black button">CREATE YOUR TEAM</router-link>
     
             <!-- <a href="https://goo.gl/forms/wktdAeVXlYA3RICt2" class="ui massive blue inverted black button">CREATE YOUR DREAM JOB</a>-->
               </div>
@@ -32,7 +32,7 @@
           <div class="col-lg-4 my-auto">
             <div class="device-container">
                   <div class="screen" id="foot">
-                 <img src="../assets/dreamjob3.gif" height="500px" width="400px" class="img-fluid" alt="">
+                 <img src="../assets/dreamjob3.gif" class="img-fluid" alt="">
                  </div>
             </div>
           </div>
@@ -54,39 +54,40 @@
         </br>
 
         <div class="row">
-          <div class="col-lg-6 my-auto">
+          <div class="col-lg-4 my-auto">
           <div class="feature-item">
                   <div style="text-align:left">
                    <div class="ui segment">
-                    <h3 class="mb-4 text-center" id= "textsize3">Teach</h3>
-                     <h3 class="text-center" id= "textsize6">About Your Dream Job</h3>
-                     <h3 class="text-center" id= "textsize7"><a href="">Learn More</a></h3>
+                    <h3 class="mb-4 text-center" id= "textsize3">Monetize?</h3>
+                     <h3 class="text-center" id= "textsize6">Sell bug fixes</h3>
+                     <h3 class="text-center" id= "textsize7"><a href="">bug fix market</a></h3>
                     </div>
                   </div>
                   </div>
           </div>
-          <div class="col-lg-6 my-auto">
+          <div class="col-lg-4 my-auto">
           <div class="feature-item">
                   <div style="text-align:left">
                    <div class="ui segment">
-                    <h3 class="mb-4 text-center" id= "textsize3">Learn</h3>
-                     <h3 class="text-center" id= "textsize6">About Your Dream Job</h3>
-                     <h3 class="text-center" id= "textsize7"><a href="">Learn More</a></h3>
+                    <h3 class="mb-4 text-center" id= "textsize3">Jobs?</h3>
+                     <h3 class="text-center" id= "textsize6">Create dream job</h3>
+                     <h3 class="text-center" id= "textsize7"><a href="">learn & teach</a></h3>
                     
                     </div>
                   </div>
                   </div>
           </div>
-         
-        </div>
-        <br>
-        <hr>
-        <br>
-        <br>
-        <div class="section-heading text-center">
-        </br>
-          <h1 class="mb-4" id= "textsize3">Don't just apply for a job, create your dream job.</h1>
-       
+          <div class="col-lg-4 my-auto">
+          <div class="feature-item">
+                  <div style="text-align:left">
+                   <div class="ui segment">
+                    <h3 class="mb-4 text-center" id= "textsize3">Manager?</h3>
+                     <h3 class="text-center" id= "textsize6">Build your teams</h3>
+                     <h3 class="text-center" id= "textsize7"><a href="manager">skills + culture</a></h3>
+                    </div>
+                  </div>
+                  </div>
+          </div>
         </div>
         
         <div class="row">
@@ -105,11 +106,10 @@
                   <div style="text-align:left">
                     <!--<i class="icon-screen-smartphone text-primary"></i>-->
                    <div class="ui segment">
-                    <h3 class="text-center">Skill Tests</h3>
-                    <h5 class="text-center">Find the skill tests conducted at your dream companies.</h5>
-                  <!--<h4><a href="/timeline">Learn More</a></h4>-->
-                 <!--<router-link v-show="!user" :to="{name: 'login'}">Learn More</router-link>
-                 --> </div>
+                    <h3>Prepare for your dream job?</h3>
+                    <p class="text-muted">Do you want to know how to get the job at your dream companies?Post your dream job, prepare for your dream job, land your dream job.</p>
+                  <h4><a href="https://goo.gl/forms/wktdAeVXlYA3RICt2">Learn More</a></h4>
+                  </div>
                   </div>
                   </div>
                 </div>
@@ -118,11 +118,10 @@
                   <div style="text-align:left">
                     <!--<i class="icon-camera text-primary"></i>-->
                     <div class="ui segment">
-                    <h3 class="text-center">Culture Fit</h3>
-                    <h5 class="text-center">Learn the culture at your dream companies. </h5>
-                    <!--<h4><a href="http://www.dreamjobb.com/timeline">Learn More</a></h4>-->
-                   <!--<router-link v-show="!user" :to="{name: 'login'}">Learn More</router-link>
-                   --> </div>
+                    <h3>Help others get their dream job.</h3>
+                    <p class="text-muted">You love your job and you want to mentor others on what it takes to do the job. This is a great opportunity to not only connect with the talent but also to hire talent quickly when a position opensup. </p>
+                    <h4><a href="https://goo.gl/forms/wktdAeVXlYA3RICt2">Learn More</a></h4>
+                    </div>
                   </div>
                   </div>
                 </div>
@@ -136,8 +135,7 @@
       <div class="container">
         <div class="section-heading text-center">
           <h2>Take control of your career. </h2>
-          <!--<p class="text-muted"><a href="/timeline">Learn More</a></p>-->
-           <router-link v-show="!user" :to="{name: 'login'}">Learn More</router-link>
+          <p class="text-muted"><a href="https://goo.gl/forms/wktdAeVXlYA3RICt2">Learn More</a></p>
           <hr>
         </div>
          
@@ -146,7 +144,7 @@
     </section>
     <section class="contact bg-primary1" id="contact">
       <div class="container1">
-        <h2>We <img src="../assets/heart-icon.png" width="2%" height="2%"></img>
+        <h2>We
           <i class="fa fa-heart"></i>
           new friends!</h2>
         <ul class="list-inline list-social">
@@ -175,7 +173,6 @@
 <link src='../../vendor/bootstrap/css/bootstrap.min.css'/>
 <link src='../../vendor/font-awesome/css/font-awesome.min.css'/>
 <link src='../../vendor/simple-line-icons/css/simple-line-icons.css'/>
-<link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.min.css">
 <style>
 .fit-content{
     color: #f9f900;
@@ -211,6 +208,6 @@ section.img {
 
 <script>
 export default {
-     name: 'Home'
+     name: 'Manager'
 }
 </script>
